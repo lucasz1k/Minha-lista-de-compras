@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/logo.svg" alt="quicklist logo" class="logo">
+    </header>
+
+    <main>
+        <a href="#" class="back-link">← Voltar</a>
+        <h1>Compras da semana</h1>
+
+            <form>
+                <input type="text" placeholder="Adicione um novo item">
+                <button type="submit" id="btn" class="button">Adicionar item</button>
+            </form>
+
+            <ul class="lista">
+                <li class="item">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="item-text">Pão de forma</span>
+                    <button class="delete-btn" aria-label="Remover item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="item">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="item-text">Café preto</span>
+                    <button class="delete-btn" aria-label="Remover item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="item">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="item-text">Suco de laranja</span>
+                    <button class="delete-btn" aria-label="Remover item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="item">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <span class="item-text">Bolacha</span>
+                    <button class="delete-btn" aria-label="Remover item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div id="toast" role="status" aria-live="polite"></div>
+            <script src="script.js"></script>
+    </main>
+</body>
+</html>
